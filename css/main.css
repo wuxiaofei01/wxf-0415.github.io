@@ -1,0 +1,138 @@
+﻿#page-container {
+    width: 700px;
+    background: red;
+    margin: auto;
+    height: auto;
+}
+
+#main-nav {
+    background: red;
+    height: 50px;
+}
+
+#header {
+    width: 700px;
+    height: 150px;
+    background: white url(work1\src\image\back_image.png);
+}
+
+#sidebar-a {
+    background: darkgreen;
+    float: right;
+}
+
+#content {
+    background: green;
+}
+
+#footer {
+    background: orange;
+    height: 66px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 57px;
+    padding-right: 31px;
+}
+
+#BJ {
+    /*图片居中 */
+    text-align: center;
+}
+
+#img {
+    /*图片宽度，高度 */
+    width: 10%;
+    height: 10%;
+}
+
+#ol {
+    position: absolute;
+    /* 绝对定位 */
+    bottom: 85px;
+    /* 高度 */
+    width: 100%;
+    /* 宽度 */
+    text-align: center;
+    /* 居中*/
+    right: 15px;
+}
+
+.socialMedia img {
+    max-width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.album {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, "PingFang SC", sans-serif;
+}
+
+.box-page {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.words {
+    position: absolute;
+    display: none;
+    color: brown;
+}
+
+.continer {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.continer div {
+    display: none;
+    /*默认隐藏*/
+}
+
+.continer:hover div {
+    display: initial;
+    /*当鼠标hover时展示*/
+}
+
+.card {
+    padding: 10px;
+    width: 300px;
+    height: 180px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 6px;
+    -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15);
+    transform: translate(0, -5px);
+    transition-delay: 0s !important;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+    box-shadow: 0 4px 16px rgba(48, 55, 66, 0.15);
+}
+
+
+/* 非核心样式 */
+
+.card-header {
+    text-align: center;
+}
+
+.card-body,
+.card-footer {
+    text-align: left;
+}
