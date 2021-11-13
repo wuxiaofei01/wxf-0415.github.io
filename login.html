@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>登陆页面</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+</head>
+
+<script>
+    function autoPlay(username, password) {
+        alert(username)
+        var myAuto = document.getElementById(username);
+        myAuto.play();
+    }
+
+    function myFunction() {
+        text_username = document.getElementById("username").value; // 找到元素
+        text_passsord = document.getElementById("password").value;
+        if (text_passsord == "admin")
+            autoPlay(text_username, text_passsord)
+
+
+    }
+</script>
+
+<body>
+    <div id="maxbox">
+        <h1>LOGIN</h1>
+        <div class="inputbox">
+            <div class="inputText">
+                <span class="iconfont icon-mine"></span>
+                <input type="text" placeholder="Username" id="username" />
+            </div>
+            <div class="inputText">
+                <span class="iconfont icon-lock"></span>
+                <input type="password" placeholder="Password" id="password" />
+            </div>
+            <input class="inputButton" type="button" value="LOGIN" onclick="myFunction()" />
+            <div id="sign_up">
+                Don't have account ? <a href="#">Sign Up</a>
+            </div>
+
+        </div>
+
+        <audio id="music1" src="src/music/Chance.mp3" controls="controls" loop="false" hidden="true">
+        </audio>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
